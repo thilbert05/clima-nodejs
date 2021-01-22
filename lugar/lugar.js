@@ -6,7 +6,7 @@ const getLugarLatLng = async (dir) => {
   const instance  = axios.create({
     // url: `/`,
     baseURL: `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodedUrl}.json`,
-    params: {'access_token': 'pk.eyJ1IjoidGhpbGJlcnQwNSIsImEiOiJja2s3bWRnNncwY3JzMnVtZjQ0NTR3ZW1rIn0.sUBbNjpF-M6lt2H7WvRzaA'}
+    params: {'access_token': `${process.env.GEOCODING_API_KEY}`}
   });
   
   const resp = await instance.get();

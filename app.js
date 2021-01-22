@@ -9,9 +9,9 @@ const argv = require('yargs').options({
 const {getLugarLatLng} = require('./lugar/lugar');
 const {getClima} = require('./clima/clima');
 
-let lat;
-let lng;
-let direccion;
+// let lat;
+// let lng;
+// let direccion;
 
 
 // console.log(getLugarLatLng(argv.direccion));
